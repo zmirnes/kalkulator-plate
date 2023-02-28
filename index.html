@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kalkulator Plate</title>
+
+    <!-- CSS -->
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive-desing.css" />
+
+    <!-- Fonts -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="app-container">
+        <div class="app-heading"><h1>KALKULATOR PLATE</h1></div>
+        <div class="entering-data">
+          <div class="data-block">
+            <p class="data-name">Satnica za obračun:</p>
+            <input
+              type="number"
+              name="satnica"
+              id="satnica"
+              min="-999"
+              max="999"
+            />
+          </div>
+          <div class="data-block">
+            <p class="data-name">Fond za obračun:</p>
+            <input type="number" name="fond" id="fond" min="-999" max="999" />
+          </div>
+          <div class="data-block">
+            <p class="data-name">Ukupno sati odrađeno:</p>
+            <input
+              type="number"
+              name="ukupno-sati"
+              id="ukupno-sati"
+              min="-999"
+              max="999"
+            />
+          </div>
+          <div class="data-block">
+            <p class="data-name">Broj sati treće smjene:</p>
+            <input
+              type="number"
+              name="treca-smjena"
+              id="treca-smjena"
+              min="-999"
+              max="999"
+            />
+          </div>
+          <div class="data-block">
+            <p class="data-name">Broj dana godišnjeg odmora:</p>
+            <input
+              type="number"
+              name="godisnji-odmor"
+              id="godisnji-odmor"
+              min="-999"
+              max="999"
+            />
+          </div>
+          <div class="data-block">
+            <p class="data-name">Broj dana bolovanja:</p>
+            <input
+              type="number"
+              name="bolovanje"
+              id="bolovanje"
+              min="-999"
+              max="999"
+            />
+          </div>
+          <div class="data-block">
+            <p class="data-name">Broj dana praznika:</p>
+            <input
+              type="number"
+              name="praznik"
+              id="praznik"
+              min="-999"
+              max="999"
+            />
+          </div>
+        </div>
+        <div class="results">
+          <div class="result">
+            <p class="result-name">Fond:</p>
+            <p class="result-fond result-value"></p>
+          </div>
+          <div class="result">
+            <p class="result-name">Porez:</p>
+            <p class="result-porez result-value"></p>
+          </div>
+          <div class="result">
+            <p class="result-name">Topli obrok:</p>
+            <p class="result-to result-value"></p>
+          </div>
+          <div class="result">
+            <p class="result-name">Prekovremeni sati:</p>
+            <p class="result-prekovremeni result-value"></p>
+          </div>
+          <div class="result">
+            <p class="result-name">UKUPNO:</p>
+            <p class="result-ukupno result-value"></p>
+          </div>
+        </div>
+        <button class="izracunaj-btn">Izračunaj</button>
+      </div>
+    </div>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

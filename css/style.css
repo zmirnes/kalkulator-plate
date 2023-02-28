@@ -1,0 +1,146 @@
+* {
+  font-family: "Montserrat";
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  min-height: fill-available;
+  min-height: -webkit-fill-available;
+}
+html {
+  height: fill-available;
+  height: -webkit-fill-available;
+}
+
+body {
+  background: url("../images/bg.png");
+  background-color: rgba(255, 255, 255, 0.8);
+  background-blend-mode: overlay;
+}
+
+.main-container {
+  width: 100%;
+  height: 100vh;
+  backdrop-filter: blur(140px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.app-container {
+  background-color: #f3f3f8;
+  box-shadow: 0px 4px 22px 5px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.app-heading {
+  background-color: #fff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 4rem;
+  border-radius: 10px 10px 0 0;
+}
+
+.app-heading h1 {
+  font-size: 1em;
+  color: #313131;
+}
+
+.entering-data {
+  background-color: #fff;
+}
+
+.data-block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  border-bottom: 1px solid #b0b0b0;
+  gap: 1rem;
+}
+
+.data-block input {
+  width: 4rem;
+  font-size: 1em;
+  padding: 0.3rem;
+  outline: none;
+  border-radius: 5px;
+  border: 1px solid #b0b0b0;
+  transition: 200ms;
+  font-weight: 500;
+}
+
+.data-block input:focus {
+  border: 1px solid #fe0000;
+  outline: none;
+  border-radius: 5px;
+}
+
+.data-block input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  /* display: none; <- Crashes Chrome on hover */
+  -webkit-appearance: none;
+  margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+input[type="number"] {
+  -moz-appearance: textfield; /* Firefox */
+}
+
+.data-name {
+  font-weight: 500;
+}
+
+.results {
+  background-color: #fff;
+  border-radius: 20px 20px 0px 0px;
+  box-shadow: 0px 0px 29px rgba(0, 0, 0, 0.25);
+  margin-top: 1rem;
+  padding: 1.5rem 1.5rem;
+  transform: translateY(100%);
+  transition: linear 300ms;
+}
+
+.result:last-of-type {
+  border-bottom: none;
+}
+
+.result {
+  border-bottom: 1px solid #b0b0b0;
+  padding: 0.5rem 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.result-value {
+  font-weight: 500;
+}
+
+.result-name {
+  font-weight: 500;
+}
+
+.izracunaj-btn {
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-size: 1em;
+  font-weight: 500;
+  padding: 0.8rem 0;
+  outline: none;
+  border: none;
+  background-color: #fe0000;
+  color: white;
+  border-radius: 0 0 10px 10px;
+  cursor: pointer;
+  position: relative;
+  z-index: 99;
+}
